@@ -1,0 +1,1 @@
+This is an xml project to use with the infinity engin (in work) the xml_make executable can be found in the infinity repo.
