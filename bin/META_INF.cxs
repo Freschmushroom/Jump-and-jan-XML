@@ -1,0 +1,8 @@
+hardlink_/native/Program.ncxs
+hardlink_/native/Game.ncxs
+link@/menu/MainMenu.cxs
+link@/menu/PlayMenu.cxs
+link@/menu/Options.cxs
+res@/setting/settings.xml
+res@/img/background.png
+su_/startup.cxs::main

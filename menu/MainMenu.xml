@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<Menu name="MainMenu">
+	<Include>PlayMenu</Include>
+	<Include>Options</Include>
+	<IncludeNative>/native/Program</IncludeNative>
+	<Item name="play" display=">>Play<<">
+		<Action priority="HIGHEST">
+			<ChangeScreen>PlayMenu.screen</ChangeScreen>
+		</Action>
+	</Item>
+	<Item name="options" display="Options">
+		<Action priority="HIGHEST">
+			<ChangeScreen>Options.screen</ChangeScreen>
+		</Action>
+	</Item>
+	<Item name="quit" display="Quit">
+		<Action priority="HIGHEST">
+			<Operation>Program.end</Operation>
+		</Actio>
+	</Item>
+	<Screen name="screen">
+		<Layout>
+			<Background>
+				<Image>/img/background.png</Image>
+			</Background>
+		</Layout>
+		<Button item="play">play.display</Button>
+		<Button item="options">options.display</Button>
+		<Button item="quit">quit.display</Button>
+	</Screen>
+</Menu>

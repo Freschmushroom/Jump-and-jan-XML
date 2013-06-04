@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<Menu name="PlayMenu">
+	<Include>MainMenu</Include>
+	<IncludeNative>/native/Game</IncludeNative>
+	<Item name="back" display="Back">
+		<Action priority="HIGHEST">
+			<ChangeScreen>MainMenu.screen</ChangeScreen>
+		</Action>
+	</Item>
+	<Item name="load" display="Test">
+		<Action priority="NORMAL">
+			<Operation>Game.load("Test")</Operation>
+		</Action>
+	</Item>
+	<Screen name="screen">
+		<Layout>
+			<Background>
+				<Image>/img/background.png</Image>
+			</Background>
+		</Layout>
+		<Button item="load">load.display</Button>
+		<Button item="back">back.display</Button>
+	</Screen>
+</Menu>

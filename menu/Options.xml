@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<Menu name="Options">
+	<Include>PlayMenu</Include>
+	<Include>/setting/settings.xml</Include>
+	<Item name="back" display="Back">
+		<Action priority="NORMAL">
+			<ChangeScreen>PlayMenu.screen</ChangeScreen>
+		</Action>
+	</Item>
+	<Item name="save" display="Save">
+		<Action priority="HIGHEST">
+			<Change field="settings.music.value">music</Change>
+			<Change field="settings.level.value">level</Change>
+			<Change field="settings.seq1.value">seq1</Change>
+		</Action>
+	</Item>
+	<Screen name="screen">
+		<Background>
+			<Image>/img/nackground.png</Image>
+		</Background>
+		<Label>Music</Label>
+		<CheckBox name="music">settings.music.value</CheckBox>
+		<Label>Level</Label>
+		<TextBox name="level">settings.level.value</TextBox>
+		<Label>Sequence_1</Label>
+		<CheckBox name="seq1">settings.seq1.value</CheckBox>
+		<Button item="save">save.display</Button>
+		<Button item="back">back.display</Button>
+	</Screen>
+</Menu>

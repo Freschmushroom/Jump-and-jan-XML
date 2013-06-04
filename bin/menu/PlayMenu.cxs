@@ -1,0 +1,11 @@
+"PlayMenu"
+link@MainMenu.cxs
+hardlink_/native/Game.ncxs
+itac_"back"_"Back"("HIGHEST")
+cs_MainMenu.screen
+itac_"load"_"Test"("NORMAL")
+cn_Game.load("Test")
+sc_"screen"
+lay_back{img{/img/background.png}}
+but_"load"_load.display
+but_"back"_back.display

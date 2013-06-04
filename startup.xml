@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<Plain type="startup">
+	<Include>/menu/MainMenu</Include>
+	<IncludeNative>/native/Game</IncludeNative>
+	<Action name="main" priority="ROOT">
+		<Operation>Game.init</Operation>
+		<ChangeScreen>MainMenu.screen</ChangeScreen>
+	</Action>
+</Plain>

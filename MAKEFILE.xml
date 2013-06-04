@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<MakeFile>
+	<BuildInfo>
+		<CleanUp>true</CleanUp>
+		<BuildPath>./bin</BuildPath>
+		<LocalPath>./</LocalPath>
+		<Root>./</Root>
+	</BuildInfo>
+	<Structure location="/">
+		<Folder>/</Folder>
+		<Folder>/menu/</Folder>
+		<Folder>/native/</Folder>
+		<Folder>/setting</Folder>
+		<Folder>/img/</Folder>
+	</Structure>
+	<MakeNative>/native/Program</MakeNative>
+	<MakeNative>/native/Game</MakeNative>
+	<Make>/menu/MainMenu</Make>
+	<Make>/menu/PlayMenu</Make>
+	<Make>/menu/Options</Make>
+	<Make>/startup</Make>
+	<Copy>/setting/settings.xml</Copy>
+	<Copy>/img/background.png</Copy>
+	<Startup>/startup</Startup>
+</MakeFile>

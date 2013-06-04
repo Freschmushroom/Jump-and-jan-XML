@@ -1,0 +1,15 @@
+"MainMenu"
+link@PlayMenu.cxs
+link@Options.cxs
+hardlink_/native/Program.ncxs
+itac_"play"_"("HIGHEST")
+cs_PlayMenu.screen
+itac_"options"_"Options"("HIGHEST")
+cs_Options.screen
+itac_"quit"_"Quit"("HIGHEST")
+cn_Program.end
+sc_"screen"
+lay_back{img{/img/background.png}}
+but_"play"_play.display
+but_"options"_options.display
+but_"quit"_quit.display

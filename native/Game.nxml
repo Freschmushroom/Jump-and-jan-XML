@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<Native>
+	<NativeMethod name="load" param1="File f">
+		loadGame(f);
+		updateValues();
+		refreshGLBuffers();
+		joinPlayerInGame();
+	</NativeMethod>
+	<NativeMethod name="new" param1="String s">
+		selectVersion(s);
+		unjoinPlayerInGame();
+		unloadGame();
+		createRandomWorld();
+		createNewGame();
+		joinLastWorldInGame();
+		updateValues();
+		refreshGLBuffers();
+		joinPlayerInGame();
+	</NativeMethod>
+	<NativeMethod name="init">
+		initGLAL();
+		loadGameFiles();
+	</NativeMethod>
+</Native>
